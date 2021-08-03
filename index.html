@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', function() {
     wavesurfer.on('region-in', clickedRegion);
     wavesurfer.on('region-play', function(region) {
         region.once('out', function() {
-           // wavesurfer.play(region.start);
-           // wavesurfer.pause();
+            wavesurfer.play(region.start);
+            wavesurfer.pause();
         });
     });
 
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
     wavesurfer.on('pause', function() {
         playButton.style.display = '';
         pauseButton.style.display = 'none';
-       // wavesurfer.pause();
+        wavesurfer.pause();
     });
 
 
