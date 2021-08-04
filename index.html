@@ -469,6 +469,15 @@ const reg = {
   }
   function divInput(dataid){
     console.log("code pressed",event.keyCode)
+         if (event.keyCode===118) {
+        event.preventDefault();
+        wavesurfer.play();
+        console.log("alt pressed")
+    }
+    if (event.keyCode===119) {
+        event.preventDefault();
+        wavesurfer.pause();
+    }
        if (event.keyCode===33) {
         event.preventDefault();
         wavesurfer.playPause();
