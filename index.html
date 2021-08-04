@@ -512,7 +512,7 @@ const reg = {
        console.log("current region end",curregionend)
         console.log("New region start",newStart)
         const currTime=Math.round((wavesurfer.getCurrentTime()*10)/10);
-        if((currTime-rgn.start)<1.5){
+        if((currTime-rgn.start)<1.5||(rgn.end-newStart)<1.0){
             wavesurfer.regions.list[dataid].update({data:{note:msg},attributes:{speaker:spk}});
         }else{
         const newend=Math.round((rgn.end*10)/10);
