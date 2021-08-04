@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let pauseButton = document.querySelector('#pause');
     wavesurfer.on('play', function() {
         playButton.style.display = 'none';
-        //pauseButton.style.display = '';
+        pauseButton.style.display = '';
       // wavesurfer.play();
     });
     wavesurfer.on('pause', function() {
