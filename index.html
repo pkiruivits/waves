@@ -233,7 +233,14 @@ document.addEventListener('DOMContentLoaded', function() {
         pauseButton.style.display = 'none';
        // wavesurfer.pause();
     });
-
+playButton.addEventListener('click',function(){
+    console.log("play bt clicked");
+    wavesurfer.play();
+})
+pauseButton.addEventListener('click',function(){
+    console.log("pause bt clicked");
+    wavesurfer.pause();
+})
 
     document.querySelector(
         '[data-action="delete-region"]'
