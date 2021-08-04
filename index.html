@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
     wavesurfer.on('region-updated', saveRegions);
     wavesurfer.on('region-removed', saveRegions);
     wavesurfer.on('region-in', showNote);
-    wavesurfer.on('region-in', clickedRegion);
+    //wavesurfer.on('region-in', clickedRegion);
     wavesurfer.on('region-play', function(region) {
         region.once('out', function() {
             wavesurfer.play(region.start);
